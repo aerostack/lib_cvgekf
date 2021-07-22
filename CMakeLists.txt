@@ -8,7 +8,8 @@ project(${PROJECT_NAME})
 #see: http://stackoverflow.com/questions/10984442/how-to-detect-c11-support-of-a-compiler-with-cmake
 #add_definitions(-std=c++11)
 #add_definitions(-std=c++0x)
-add_definitions(-std=c++03)
+# add_definitions(-std=c++03)
+set(CXX_STANDARD_REQUIRED 11)
 
 # Set the build type.  Options are:
 #  Coverage       : w/ debug symbols, w/o optimization, w/ code-coverage
